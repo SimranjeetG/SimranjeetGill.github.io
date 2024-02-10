@@ -18,7 +18,7 @@ function general_utils() {
 	});
 }
 
-function blog_posts() {
+function resume_posts() {
 
     // keeping it static, can be fetched from a blog dynamically as well
     let posts = [
@@ -57,16 +57,16 @@ function blog_posts() {
         }
 
         let post_template = `
-        <div class="blog-post" onclick="blog_link_click('${post.url}');">
+        <div class="resume-post" onclick="resume_link_click('${post.url}');">
 
-            <div class="blog-link">
+            <div class="resume-link">
     
                 <h3><a href="${post.url}">${post.title}</a></h3>            
 
             </div>
     
-            <div class="blog-goto-link">
-                <img class="blog-arrow" src="/assets/images/right-open-mini.svg"/>
+            <div class="resume-goto-link">
+                <img class="resume-arrow" src="/assets/images/right-open-mini.svg"/>
             </div>
         </div>
         `;
@@ -76,16 +76,16 @@ function blog_posts() {
 
     // for the more posts link
     let post_template = `
-    <div class="blog-post more-blogs" onclick="blog_link_click('https://www.nagekar.com');">
+    <div class="resume-post more-resume" onclick="blog_link_click('https://www.nagekar.com');">
 
-        <div class="blog-link">
+        <div class="resume-link">
 
-            <h3><a href="https://www.nagekar.com">Visit the blog for more posts</a></h3>            
+            <h3><a href="https://www.nagekar.com">Visit the resume for more posts</a></h3>            
 
         </div>
 
         <div class="blog-goto-link">
-            <img class="blog-arrow" src="/assets/images/right-open-mini.svg"/>
+            <img class="resume-arrow" src="/assets/images/right-open-mini.svg"/>
         </div>
     </div>
     `;
@@ -96,6 +96,6 @@ function blog_posts() {
 
 }
 
-function blog_link_click(url) {
+function resume_link_click(url) {
     window.location = url;
 }
