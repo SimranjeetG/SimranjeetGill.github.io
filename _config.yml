@@ -1,4 +1,4 @@
-title: Simranjeet Kaur Gill
+title:    Simranjeet Kaur Gill
 description: 
 site_title: '@skg - Simranjeet Kaur Gill'
 
@@ -8,14 +8,14 @@ exclude: [vendor/ruby]
 
 # Personalization
 github_username: SimranjeetG
-blog_url: 
+Linkedin_url: https://www.linkedin.com/in/simranjeet-kaur-gill-6106aa234/
 email: simranjeetkaur9340@gmail.com
-keybase_username: 
-twitter_username: 
+#keybase_username: 
+##twitter_username: 
 reddit_username: 
 
 # absolute or relative
-profile_picture: assets/images/Picture.jpg
+profile_picture: assets/images/pp.jpg
 
 # Google Analytics ID
 # google_analytics: 
