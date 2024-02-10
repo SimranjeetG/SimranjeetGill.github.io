@@ -11,13 +11,12 @@ let render_projects = (slug) => {
 
     let projects_obj = [
         {
-            image: 'assets/images/mentors.jpg',
-            link: 'https://github.com/abhn/Mporter',
-            title: 'Mporter',
-            demo: 'https://mporter.co',
-            technologies: ['Flask', 'Celery', 'Python'],
-            description: "Flask web application for easy reporting updates to one's mentor. Multi-user support, easy to deploy and use.",
-            categories: ['featured', 'webdev']
+            image: 'assets/images/sql.png',
+            pdf: 'assets/pdf/Project1.pdf',
+            title: 'Flight Reservation And Booking System',
+            technologies: ['SQL', 'EXCEL'],
+            description: "To create a flight reservation function by loading and to create DB Tables and executing DDL and DML queries. Designed ER Diagrams, and conceptual models, created database objects, and wrote SQL queries to normalize and populate data into normalized tables from the provided raw files. Generated test data to simulate Passenger details, flight details, and available seats.",
+            categories: ['featured', 'Project']
         },
         {
             image: 'assets/images/mobile-landscape.jpg',
