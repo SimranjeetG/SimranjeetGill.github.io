@@ -20,7 +20,7 @@ let render_projects = (slug) => {
         {
             image: 'assets/images/research.jpg',
             pdf: 'assets/pdf/research1.pdf',
-            title: 'Impact of an advertisement on consumer buying behavior',
+            title: 'Impact of an advertisement on consumer buying behaviour',
             technologies: ['Excel', 'G*Power', 'Smartpls'],
             description: "Identify the impact of advertisement on consumer buying behaviour in the FMCG industry. Designed structural and measurement models, performed G*Power Analysis and used descriptive research method to study the factors Influencing.",
             categories: ['featured', 'Research']
