@@ -1,6 +1,6 @@
 title: Simranjeet Kaur Gill
 description: Web & Security Engineer
-site_title: '@abhn - Abhishek Nagekar'
+site_title: '@skg - Simranjeet Kaur Gill'
 
 # Build settings
 markdown: kramdown
@@ -8,7 +8,7 @@ exclude: [vendor/ruby]
 
 # Personalization
 github_username: SimranjeetG
-blog_url: https://www.nagekar.com
+blog_url: 
 email: simranjeetkaur9340@gmail.com
 keybase_username: 
 twitter_username: 
