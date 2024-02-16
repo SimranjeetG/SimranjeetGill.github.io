@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certifications</title>
+    <link rel="stylesheet" href="path/to/your/css/styles.css"> <!-- Update this path to your CSS file -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+<div class="section-wrapper">
+    <section class="section certifications" id="certifications">
+        <div class="full-width">
+            <div class="section-heading">Certifications</div>
+            <div class="projects-wrapper">
+                <!-- Certifications will be loaded here by JavaScript -->
+            </div>
+        </div>
+    </section>
+</div>
+
+<script>
+$(document).ready(() => {
+    render_certifications();
+});
+
+let render_certifications = () => {
+    let certifications_area = $('.projects-wrapper');
+    let certifications_obj = [
+        {
+            image:'assets/images/microsoft.png',
+            pdf: 'assets/pdf/Certification1.pdf',
+            title: 'Data Modeling in Power BI',
+            description: "Learn to identify data schema types, manage relationships in data models, and design models using the Star schema approach.",
+        },
+        {
+            image:'assets/images/coursera.png',
+            pdf: 'assets/pdf/Certification2.pdf',
+            title: 'Python for Beginners: Data Structures',
+            description: "Learn to manipulate lists, sets, tuples, and dictionaries in Python, filter and analyze data, and visualize insights, culminating in a challenge to create a food recommendation system.",
+        },
+        {
+            image:'assets/images/coursera.png',
+            pdf: 'assets/pdf/Certification3.pdf',
+            title: 'Business Analytics for Decision Making',
+            description: "Utilize cluster analysis to group similar data points, perform the analysis in Excel, and apply it to marketing data for strategic insights and decision-making.",
+        },
+        {
+            image:'assets/images/iit.png',
+            pdf: 'assets/pdf/Certification4.pdf',
+            title: 'Relational Database Implementation and Applications',
+            description: "SQL techniques including stored procedures for modularity, temporary tables for data handling, triggers for automated responses, functions for data manipulation, views for abstraction, and indexes for performance optimization.",
+        },
+    ];
+
+    let certifications = certifications_obj.map(cert => {
+        return `
+            <div class="wrapper">      
+                <div class="card radius shadowDepth1">
+                    <div class="card__image border-tlr-radius">
+                        <img src="${cert.image}" alt="image" class="border-tlr-radius">
+                    </div>           
+                    <div class="card__content card__padding">
+                        <article class="card__article">
+                            <h2><a href="${cert.pdf}" target="_blank">${cert.title}</a></h2>
+                            <p>${cert.description}</p>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        `;
+    }).join('');
+
+    certifications_area.html(certifications);
+};
+</script>
+</body>
+</html>
