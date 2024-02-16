@@ -1,5 +1,5 @@
 $(document).ready(() => {
-    render_projects('featured');
+    render_projects('featured'); // Default view
 });
 
 let render_projects = (slug) => {
@@ -28,13 +28,12 @@ let render_projects = (slug) => {
     ];
 
     let projects = [];
-    if(slug == 'all') {
+    if(slug === 'all') {
         projects = projects_obj.map(project_mapper);
-    } 
-    else {
+    } else {
         projects = projects_obj.filter(project => project.categories.includes(slug)).map(project_mapper);
     }
-    projects_area.hide().html(projects).fadeIn();
+    projects_area.hide().html(projects.join('')).fadeIn();
 };
 
 let project_mapper = project => {
@@ -56,7 +55,7 @@ let project_mapper = project => {
                     <div class="card__meta">
                         ${project.technologies.map(tech =>
                             `<span class="project-technology paragraph-text-normal">${tech}</span>`
-                        ).join('')}
+                        ).join(', ')}
                     </div>
                 </div>
             </div>
