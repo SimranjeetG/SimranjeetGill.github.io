@@ -4,8 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Certifications</title>
-    <link rel="stylesheet" href="path/to/your/css/styles.css"> <!-- Update this path to your CSS file -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        .certification-wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around; /* Adjust spacing around items */
+        }
+        .wrapper {
+            flex: 1 1 45%; /* Adjust this to change the minimum width of each card */
+            margin-bottom: 20px; /* Space between rows */
+        }
+        .card {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            margin: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: 0.3s;
+        }
+        .card:hover {
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+        .card__image img {
+            width: 100%; /* Ensure images are fully responsive */
+            height: auto;
+        }
+        @media (max-width: 768px) {
+            .wrapper {
+                flex-basis: 100%; /* Stack them on smaller screens */
+            }
+        }
+    </style>
 </head>
 <body>
 <div class="section-wrapper">
