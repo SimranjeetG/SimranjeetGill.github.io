@@ -4,13 +4,13 @@ body {
   font-size: 16px;
 }
 body {
-  background-color: #222; /* Dark background */
-  color: #ffffff; /* White text color */
+  background-color: #444; /* Dark background */
+  color: #fff; /* White text color */
   font-family: 'PT Sans', sans-serif; /* Keeps the font consistent */
 }
 
 a, h1, h2, h3, h4, h5, h6 {
-  color: #e7e7e7; /* Light grey for better readability */
+  color: #fff; /* Light grey for better readability */
 }
 
 a:hover {
