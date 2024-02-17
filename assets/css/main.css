@@ -345,13 +345,13 @@ img {
   float: right;
 }
 
-.resume-item {
+.certification-item {
   padding: 10px;
   -webkit-transition: all ease-in-out 0.3s;
   transition: all ease-in-out 0.3s;
 }
 
-.resume-title {
+.certification-title {
   font-size: 17.6px;
   font-size: 1.1rem;
   color: inherit;
@@ -359,7 +359,7 @@ img {
   transition: all ease-in-out 0.3s;
 }
 
-.more-resume {
+.certification-resume {
   font-size: 16px;
   font-size: 1rem;
   margin: 15px 0 20px;

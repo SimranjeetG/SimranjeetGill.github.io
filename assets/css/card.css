@@ -75,8 +75,8 @@
 	color: #2980b9;
 }
 
-/* blog cards */
-.resume-post {
+
+.certification-post {
 	width: 100%;
 	border-radius: 2px;
 	display: grid;
@@ -86,7 +86,7 @@
 	box-shadow: -4px 8px 16px 0 rgba(0, 0, 0, 0.24);
 }
 	  
-.resume-link {
+.certifiaction-link {
 	padding-left: 1rem;
 	padding-right: 1rem;
 	grid-column-start: 1;
@@ -94,16 +94,16 @@
 	border-right: solid 1px lightgray;
 }
 
-.resume-link a {
+.certification-link a {
 	text-decoration: none;
 }
 
-.resume-link:hover {
+.certification-link:hover {
 	opacity: 0.6;
 	cursor: pointer;
 }
 
-.resume-link {
+.certification-link {
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -113,16 +113,16 @@
 	grid-column-end: 3;
 }
 
-.resume-goto-link i {
+.certification-goto-link i {
 	font-size: 2rem;
 	color: #C0C0C0
 }
 
-.resume-goto-link:hover {
+.certification-goto-link:hover {
 	opacity: 0.6;
 }
 
-.resume-extra {
+.certification-extra {
 
 }
 
