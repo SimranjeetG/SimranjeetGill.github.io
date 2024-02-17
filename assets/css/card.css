@@ -149,16 +149,19 @@
 	transform: scale(1.1);
 }
 /* Targeting the Certifications section */
+/* Assuming the section has an ID of 'certifications' */
 #certifications {
-    background-color: #444; /* Dark grey background */
-    color: #fff; /* White text color */
-}
-
-/* Ensuring all text within the section is white, including links */
-#certifications, #certifications a {
-    color: #fff;
-}
-
-#certifications a:hover {
-    color: #c7c7c7; /* Lighter grey for hover state for better visibility */
-}
+	background-color: #444; /* Dark grey background */
+	color: # rgba(0, 0, 0, 0.24); /* White text */
+  }
+  
+  /* If the content inside needs specific color adjustments */
+  #certifications h1, #certifications p, #certifications a {
+	color: # rgba(0, 0, 0, 0.24); /* Ensures text and links are white */
+  }
+  
+  /* Adjust link colors on hover if needed */
+  #certifications a:hover {
+	color: #ccc; /* Lighter grey for hovered links */
+  }
+  
