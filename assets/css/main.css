@@ -3,6 +3,20 @@ body {
   font-family: 'PT Sans', sans-serif;
   font-size: 16px;
 }
+body {
+  background-color: #222; /* Dark background */
+  color: #ffffff; /* White text color */
+  font-family: 'PT Sans', sans-serif; /* Keeps the font consistent */
+}
+
+a, h1, h2, h3, h4, h5, h6 {
+  color: #e7e7e7; /* Light grey for better readability */
+}
+
+a:hover {
+  color: #c7c7c7; /* Different shade on hover for visual feedback */
+}
+
 
 img {
   max-width: 100%;
