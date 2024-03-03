@@ -18,6 +18,14 @@ let render_projects = (slug) => {
             categories: ['featured', 'Project']
         },
         {
+            image: 'assets/images/R.png',
+            pdf: 'assets/pdf/Project2.pdf',
+            title: 'Customer Sentiment Analysis',
+            technologies: ['R', 'EXCEL'],
+            description: "Analysed women's ecommerce clothing reviews to gain insights into customer satisfaction and fashion trends.Employed R programming for comprehensive data exploration, cleaning, transformation, analysis, and visualization, utilizing techniques such as sentiment analysis and statistical modeling.",
+            categories: ['featured', 'Project']
+        },
+        {
             image: 'assets/images/research.jpg',
             pdf: 'assets/pdf/research1.pdf',
             title: 'Impact of an advertisement on consumer buying behaviour',
