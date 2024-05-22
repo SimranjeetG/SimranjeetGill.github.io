@@ -1,5 +1,5 @@
 $(document).ready(() => {
-    render_projects('featured'); // Default view
+    render_projects('featured'); 
 });
 
 let render_projects = (slug) => {
@@ -53,6 +53,7 @@ let render_projects = (slug) => {
 };
 
 let project_mapper = project => {
+    let link = project.link ? project.link : project.pdf;
     return `
         <div class="wrapper">      
             <div class="card radius shadowDepth1">
@@ -64,7 +65,7 @@ let project_mapper = project => {
 
                 <div class="card__content card__padding">
                     <article class="card__article">
-                        <h2><a href="${project.pdf}" target="_blank">${project.title}</a></h2>
+                        <h2><a href="${link}" target="_blank">${project.title}</a></h2>
                         <p class="paragraph-text-normal">${project.description}</p>
                     </article>
 
