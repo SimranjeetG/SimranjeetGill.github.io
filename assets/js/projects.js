@@ -19,10 +19,10 @@ let render_projects = (slug) => {
         },
         {
             image: 'assets/images/hr.jpeg',
-            pdf: 'https://public.tableau.com/app/profile/simranjeet.gill/vizzes',
+            link: 'https://public.tableau.com/app/profile/simranjeet.gill/vizzes',
             title: 'HR Analytics Dashboard',
             technologies: ['Tableau', 'EXCEL'],
-            description: "•	To create a Dashboard that provides comprehensive insights into workforce data, enhancing HR decision-making and operational efficiency.",
+            description: "To create a Dashboard that provides comprehensive insights into workforce data, enhancing HR decision-making and operational efficiency.",
             categories: ['featured', 'Project']
         },
         {
