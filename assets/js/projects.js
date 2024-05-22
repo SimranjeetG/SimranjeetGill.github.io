@@ -1,8 +1,5 @@
 $(document).ready(() => {
-    // Redirect to Tableau link
-    //window.location.href = "https://public.tableau.com/app/profile/simranjeet.gill/vizzes";
-    
-    render_projects('featured'); 
+    render_projects('featured');
 });
 
 let render_projects = (slug) => {
@@ -33,7 +30,7 @@ let render_projects = (slug) => {
             pdf: 'assets/pdf/Project2.pdf',
             title: 'Customer Sentiment Analysis',
             technologies: ['R', 'EXCEL'],
-            description: "Analysed women's ecommerce clothing reviews to gain insights into customer satisfaction and fashion trends.Employed R programming for comprehensive data exploration, cleaning, transformation, analysis, and visualization, utilizing techniques such as sentiment analysis and statistical modeling.",
+            description: "Analysed women's ecommerce clothing reviews to gain insights into customer satisfaction and fashion trends. Employed R programming for comprehensive data exploration, cleaning, transformation, analysis, and visualization, utilizing techniques such as sentiment analysis and statistical modeling.",
             categories: ['featured', 'Project']
         },
         {
@@ -47,7 +44,7 @@ let render_projects = (slug) => {
     ];
 
     let projects = [];
-    if(slug === 'all') {
+    if (slug === 'all') {
         projects = projects_obj.map(project_mapper);
     } else {
         projects = projects_obj.filter(project => project.categories.includes(slug)).map(project_mapper);
