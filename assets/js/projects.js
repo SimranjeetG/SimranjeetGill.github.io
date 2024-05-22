@@ -1,6 +1,6 @@
 $(document).ready(() => {
     // Redirect to Tableau link
-    window.location.href = "https://public.tableau.com/app/profile/simranjeet.gill/vizzes";
+    //window.location.href = "https://public.tableau.com/app/profile/simranjeet.gill/vizzes";
     
     render_projects('featured'); 
 });
