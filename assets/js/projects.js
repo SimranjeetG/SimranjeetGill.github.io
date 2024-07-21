@@ -26,6 +26,14 @@ let render_projects = (slug) => {
             categories: ['featured', 'Project']
         },
         {
+            image: 'assets/images/credit.jpeg',
+            link: 'https://public.tableau.com/app/profile/simranjeet.gill/vizzes',
+            title: 'Credit Card Complaint Dashboard',
+            technologies: ['Tableau', 'EXCEL'],
+            description: "Designed an interactive dashboard that visualizes comprehensive credit card complaint data, highlighting total complaints, response times, trends, geographic distribution, issue categorization, and submission methods for enhanced complaint management insights",
+            categories: ['featured', 'Project']
+        },
+        {
             image: 'assets/images/R.png',
             pdf: 'assets/pdf/Project2.pdf',
             title: 'Customer Sentiment Analysis',
