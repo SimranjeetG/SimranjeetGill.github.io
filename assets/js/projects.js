@@ -18,14 +18,7 @@ let render_projects = (slug) => {
             categories: ['featured', 'Project']
         },
         
-        {
-            image: 'assets/images/sql.png',
-            pptx: 'assets/pdf/process.pptx',
-            title: 'Document Management and Approval Workflow Automation',
-            description: "Analyzed AS-IS manual processes and implemented a TO-BE Electronic Document Management System (EDMS)",
-            categories: ['featured', 'Project']
-        },
-
+    
         {
             image: 'assets/images/hr.jpeg',
             link: 'https://public.tableau.com/app/profile/simranjeet.gill/vizzes',
