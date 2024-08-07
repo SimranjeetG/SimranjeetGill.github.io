@@ -18,7 +18,7 @@ let render_projects = (slug) => {
         },
         {
             image: 'assets/images/edms.jpeg',
-            pptx: 'assets/pdf/process.pptx',
+            link: 'https://drive.google.com/file/d/your_pptx_file_id/view',
             title: 'Document Management and Approval Workflow Automation',
             description: "Analyzed AS-IS manual processes and implemented a TO-BE Electronic Document Management System (EDMS).",
             categories: ['featured', 'Project']
