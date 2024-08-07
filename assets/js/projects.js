@@ -17,6 +17,15 @@ let render_projects = (slug) => {
             description: "Create a flight reservation function by loading and to create DB Tables and executing DDL and DML queries. Designed ER Diagrams, and conceptual models, created database objects, and wrote SQL queries to normalize and populate data into normalized tables from the provided raw files. Generated test data to simulate Passenger details, flight details, and available seats.",
             categories: ['featured', 'Project']
         },
+        
+        {
+            image: 'assets/images/sql.png',
+            pptx: 'assets/pdf/process.pptx',
+            title: 'Document Management and Approval Workflow Automation',
+            description: "Analyzed AS-IS manual processes and implemented a TO-BE Electronic Document Management System (EDMS)",
+            categories: ['featured', 'Project']
+        },
+
         {
             image: 'assets/images/hr.jpeg',
             link: 'https://public.tableau.com/app/profile/simranjeet.gill/vizzes',
