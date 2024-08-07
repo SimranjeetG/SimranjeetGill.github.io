@@ -67,7 +67,7 @@ let render_projects = (slug) => {
 };
 
 let project_mapper = project => {
-    let link = project.link ? project.link : project.pdf;
+    let link = project.link ? project.link : project.pdf ? project.pdf : project.pptx;
     return `
         <div class="wrapper">      
             <div class="card radius shadowDepth1">
@@ -84,15 +84,16 @@ let project_mapper = project => {
                     </article>
 
                     <div class="card__meta">
-                        ${project.technologies.map(tech =>
+                        ${project.technologies ? project.technologies.map(tech =>
                             `<span class="project-technology paragraph-text-normal">${tech}</span>`
-                        ).join(', ')}
+                        ).join(', ') : ''}
                     </div>
                 </div>
             </div>
         </div>
     `;
 };
+
 
 let selected = (slug) => {
     render_projects(slug);
