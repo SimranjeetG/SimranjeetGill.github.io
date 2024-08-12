@@ -1,5 +1,5 @@
 # Portfolio
 
-Analytically driven, currently advancing my expertise through a Master's in Information Technology Management to harness data and technology for strategic decision-making 
+Analytically driven professional with a unique blend of expertise in data analysis, consulting, and business analysis. Passionate about solving business problems through data-driven solutions.
 
 
