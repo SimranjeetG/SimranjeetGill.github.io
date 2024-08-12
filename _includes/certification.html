@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Certifications</title>
     <style>
+        /* Basic reset for body and html */
         body, html {
             margin: 0;
             padding: 0;
@@ -12,24 +13,26 @@
             height: 100%;
         }
 
+        /* Certifications Section */
         #certifications {
             background-color: #444; /* Grey background color */
-            width: 100%; /* Full width */
+            color: white;
             padding: 50px 0; /* Vertical padding */
-            box-sizing: border-box; /* Include padding in the width calculation */
+            width: 100%;
+            box-sizing: border-box; /* Include padding in width calculations */
         }
 
         .certification-content {
-            max-width: 1200px; /* Content max width */
-            margin: 0 auto; /* Center the content */
+            max-width: 1200px; /* Max width for content */
+            margin: 0 auto; /* Center content */
             padding: 0 20px; /* Horizontal padding */
         }
 
         .certification-wrapper {
             display: flex;
             flex-wrap: wrap;
-            justify-content: space-around; /* Space between items */
-            margin-top: 20px; /* Space above the cards */
+            justify-content: space-around;
+            margin-top: 20px;
         }
 
         .wrapper {
@@ -66,86 +69,87 @@
 <body>
     <section id="certifications">
         <div class="certification-content">
-            <h2 class="section-heading" style="color: white; text-align: center;">Certifications</h2>
+            <h2 class="section-heading" style="text-align: center;">Certifications</h2>
             <div class="certification-wrapper">
                 <!-- Certifications will be loaded here by JavaScript -->
             </div>
         </div>
     </section>
 
-<script>
-$(document).ready(() => {
-    render_certifications();
-});
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+    $(document).ready(() => {
+        render_certifications();
+    });
 
-let render_certifications = () => {
-    let certifications_area = $('.certification-wrapper');
-    let certifications_obj = [
-    {
-            image:'assets/images/iit.png',
-            pdf: 'assets/pdf/file.pdf',
-            title: 'Degree',
-            description:'MS in Information Technology Management',
-        },
+    let render_certifications = () => {
+        let certifications_area = $('.certification-wrapper');
+        let certifications_obj = [
         {
-            image:'assets/images/iit.png',
-            pdf: 'assets/pdf/Academic Transcript.pdf',
-            title: 'Transcript',
-            description: 'MS in Information Technology Management',
-        },
-        {
-            image:'assets/images/iit.png',
-            pdf: 'assets/pdf/Academic Transcript.pdf',
-            title: 'Transcript',
-            description: 'MS in Information Technology Management',
-        },
-        
-        {
-            image:'assets/images/microsoft.png',
-            pdf: 'assets/pdf/certificate1.pdf',
-            title: 'Data Modeling in Power BI',
-            description: "Learn to identify data schema types, manage relationships in data models, and design models using the Star schema approach.",
-        },
-        {
-            image:'assets/images/coursera.png',
-            pdf: 'assets/pdf/certificate2.pdf',
-            title: 'Python for Beginners: Data Structures',
-            description: "Learn to manipulate lists, sets, tuples, and dictionaries in Python, filter and analyze data, and visualize insights, culminating in a challenge to create a food recommendation system.",
-        },
-        {
-            image:'assets/images/coursera.png',
-            pdf: 'assets/pdf/certificate3.pdf',
-            title: 'Business Analytics for Decision Making',
-            description: "Utilize cluster analysis to group similar data points, perform the analysis in Excel, and apply it to marketing data for strategic insights and decision-making.",
-        },
-        {
-            image:'assets/images/iit.png',
-            pdf: 'assets/pdf/certificate4.pdf',
-            title: 'Relational Database Implementation and Applications',
-            description: "SQL techniques including stored procedures for modularity, temporary tables for data handling, triggers for automated responses, functions for data manipulation, views for abstraction, and indexes for performance optimization.",
-        },
-    ];
+                image:'assets/images/iit.png',
+                pdf: 'assets/pdf/file.pdf',
+                title: 'Degree',
+                description:'MS in Information Technology Management',
+            },
+            {
+                image:'assets/images/iit.png',
+                pdf: 'assets/pdf/Academic Transcript.pdf',
+                title: 'Transcript',
+                description: 'MS in Information Technology Management',
+            },
+            {
+                image:'assets/images/iit.png',
+                pdf: 'assets/pdf/Academic Transcript.pdf',
+                title: 'Transcript',
+                description: 'MS in Information Technology Management',
+            },
+            
+            {
+                image:'assets/images/microsoft.png',
+                pdf: 'assets/pdf/certificate1.pdf',
+                title: 'Data Modeling in Power BI',
+                description: "Learn to identify data schema types, manage relationships in data models, and design models using the Star schema approach.",
+            },
+            {
+                image:'assets/images/coursera.png',
+                pdf: 'assets/pdf/certificate2.pdf',
+                title: 'Python for Beginners: Data Structures',
+                description: "Learn to manipulate lists, sets, tuples, and dictionaries in Python, filter and analyze data, and visualize insights, culminating in a challenge to create a food recommendation system.",
+            },
+            {
+                image:'assets/images/coursera.png',
+                pdf: 'assets/pdf/certificate3.pdf',
+                title: 'Business Analytics for Decision Making',
+                description: "Utilize cluster analysis to group similar data points, perform the analysis in Excel, and apply it to marketing data for strategic insights and decision-making.",
+            },
+            {
+                image:'assets/images/iit.png',
+                pdf: 'assets/pdf/certificate4.pdf',
+                title: 'Relational Database Implementation and Applications',
+                description: "SQL techniques including stored procedures for modularity, temporary tables for data handling, triggers for automated responses, functions for data manipulation, views for abstraction, and indexes for performance optimization.",
+            },
+        ];
 
-    let certifications = certifications_obj.map(cert => {
-        return `
-            <div class="wrapper">      
-                <div class="card radius shadowDepth1">
-                    <div class="card__image border-tlr-radius">
-                        <img src="${cert.image}" alt="image" class="border-tlr-radius">
-                    </div>           
-                    <div class="card__content card__padding">
-                        <article class="card__article">
-                            <h2><a href="${cert.pdf}" target="_blank">${cert.title}</a></h2>
-                            <p>${cert.description}</p>
-                        </article>
+        let certifications = certifications_obj.map(cert => {
+            return `
+                <div class="wrapper">      
+                    <div class="card radius shadowDepth1">
+                        <div class="card__image border-tlr-radius">
+                            <img src="${cert.image}" alt="image" class="border-tlr-radius">
+                        </div>           
+                        <div class="card__content card__padding">
+                            <article class="card__article">
+                                <h2><a href="${cert.pdf}" target="_blank">${cert.title}</a></h2>
+                                <p>${cert.description}</p>
+                            </article>
+                        </div>
                     </div>
                 </div>
-            </div>
-        `;
-    }).join('');
+            `;
+        }).join('');
 
-    certifications_area.html(certifications);
-};
-</script>
+        certifications_area.html(certifications);
+    };
+    </script>
 </body>
 </html>
