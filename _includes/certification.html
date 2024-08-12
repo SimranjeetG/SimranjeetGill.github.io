@@ -1,4 +1,4 @@
-<<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -6,6 +6,10 @@
     <title>Certifications</title>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+        }
         .certification-wrapper {
             display: flex;
             flex-wrap: wrap;
@@ -34,6 +38,18 @@
             width: 100%; /* Ensure images are fully responsive */
             height: auto;
         }
+        #certifications {
+            background-color: #444; /* Grey background color */
+            width: 100%; /* Ensure full width */
+            padding: 50px 0; /* Add vertical padding */
+            margin: 0; /* Remove any default margin */
+            box-sizing: border-box; /* Include padding in width/height calculations */
+        }
+        .certification-content {
+            max-width: 1200px;
+            margin: 0 auto; /* Center the content */
+            padding: 0 20px; /* Add horizontal padding */
+        }
         @media (max-width: 768px) {
             .wrapper {
                 flex-basis: 100%; /* Stack them on smaller screens */
@@ -43,7 +59,7 @@
 </head>
 <body>
 <div class="section-wrapper">
-    <section class="section certifications" id="certifications" style="background-color: #444; padding: 50px 0;">
+    <section class="section certifications" id="certifications">
         <div class="certification-content">
             <h2 class="section-heading" style="color: white; text-align: center;">Certifications</h2>
             <div class="certification-wrapper">
