@@ -1,0 +1,90 @@
+
+/* Reset default margin and padding */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif; /* Customize the font as needed */
+}
+
+/* Center the entire head section */
+.head {
+    display: flex;
+    justify-content: center; /* Centers content horizontally */
+    align-items: center; /* Centers content vertically */
+    height: 100vh; /* Full viewport height */
+    text-align: center;
+    background-color: #333; /* Background color, adjust as needed */
+    color: white; /* Text color */
+    flex-direction: column; /* Stack items vertically */
+}
+
+/* Profile Picture */
+.profile-pic-div {
+    margin-bottom: 20px; /* Space between profile pic and title */
+}
+
+.profile-pic {
+    width: 150px; /* Adjust size as needed */
+    height: 150px;
+    border-radius: 50%; /* Makes the profile picture round */
+    border: 5px solid white; /* Add a border around the picture */
+}
+
+/* Title and Description */
+.head-title {
+    font-size: 36px; /* Adjust size as needed */
+    font-weight: bold;
+    margin: 10px 0; /* Space between title and description */
+}
+
+.head-punchline {
+    font-size: 18px; /* Adjust size as needed */
+    max-width: 600px; /* Limit the width of the description */
+    margin-bottom: 30px; /* Space between description and menu */
+}
+
+/* Menu Links */
+.head-menu-wrap {
+    display: flex;
+    gap: 15px; /* Space between menu items */
+    flex-wrap: wrap; /* Wrap items on small screens */
+    justify-content: center; /* Center the menu links */
+}
+
+.nav-links {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    border: 2px solid white;
+    border-radius: 5px; /* Round the edges */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effect */
+}
+
+.nav-links:hover {
+    background-color: white;
+    color: #333; /* Change text color on hover */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .profile-pic {
+        width: 120px;
+        height: 120px;
+    }
+
+    .head-title {
+        font-size: 28px;
+    }
+
+    .head-punchline {
+        font-size: 16px;
+        max-width: 90%; /* Increase width on small screens */
+    }
+
+    .nav-links {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+}
+
