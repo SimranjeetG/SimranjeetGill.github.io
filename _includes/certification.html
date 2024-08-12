@@ -10,6 +10,9 @@
             display: flex;
             flex-wrap: wrap;
             justify-content: space-around; /* Adjust spacing around items */
+            max-width: 1200px; /* Limit width */
+            margin: 0 auto; /* Center content */
+            padding: 20px; /* Padding inside the content area */
         }
         .wrapper {
             flex: 1 1 45%; /* Adjust this to change the minimum width of each card */
@@ -22,6 +25,7 @@
             margin: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             transition: 0.3s;
+            background-color: white; /* Ensure the card has a white background */
         }
         .card:hover {
             box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
@@ -40,8 +44,8 @@
 <body>
 <div class="section-wrapper">
     <section class="section certifications" id="certifications">
-        <div class="full-width">
-            <div class="section-heading">Certifications</div>
+        <div class="certification-content">
+            <h2 class="section-heading">Certifications</h2>
             <div class="certification-wrapper">
                 <!-- Certifications will be loaded here by JavaScript -->
             </div>

@@ -66,11 +66,34 @@ body, html {
     color: #333; /* Change text color on hover */
 }
 
-/* Apply grey background to the certifications section */
+/* Skills Section */
+#skills {
+    background-color: #444; /* Set the grey background color */
+    color: white; /* Ensure the text is readable */
+    padding: 50px 20px; /* Add padding */
+    width: 100%; /* Ensure full width */
+    margin: 0; /* Remove any default margin */
+}
+
+.skills-content {
+    max-width: 1200px;
+    margin: 0 auto; /* Center content */
+    padding: 20px; /* Add padding inside the content area */
+}
+
+/* Certifications Section */
 #certifications {
     background-color: #444; /* Set the grey background color */
-    color: white; /* Ensure the text is readable against the dark background */
-    padding: 20px; /* Optional: Add some padding if needed */
+    color: white; /* Ensure the text is readable */
+    padding: 50px 20px; /* Add padding */
+    width: 100%; /* Ensure full width */
+    margin: 0; /* Remove any default margin */
+}
+
+.certification-content {
+    max-width: 1200px; /* Adjust max-width as necessary to match your content */
+    margin: 0 auto; /* Center content */
+    padding: 20px; /* Add padding inside the content area */
 }
 
 /* Responsive Adjustments */
@@ -92,5 +115,10 @@ body, html {
     .nav-links {
         padding: 8px 16px;
         font-size: 14px;
+    }
+
+    /* Responsive adjustments for certifications section */
+    #certifications, .certification-content {
+        padding: 20px;
     }
 }
