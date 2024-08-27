@@ -13,14 +13,14 @@ let render_projects = (slug) => {
             pdf: 'assets/pdf/Project1.pdf',
             title: 'Flight Reservation And Booking System',
             technologies: ['SQL', 'EXCEL'],
-            description: "Create a flight reservation function by loading and to create DB Tables and executing DDL and DML queries. Designed ER Diagrams, and conceptual models, created database objects, and wrote SQL queries to normalize and populate data into normalized tables from the provided raw files. Generated test data to simulate Passenger details, flight details, and available seats.",
+            description: "Created a flight reservation function by loading data and creating DB tables, and executing DDL and DML queries. Designed ER diagrams and conceptual models, created database objects, and wrote SQL queries to normalize and populate data into tables from the provided raw files. Generated test data to simulate passenger details, flight details, and available seatsCreate a flight reservation function by loading and to create DB Tables and executing DDL and DML queries. Designed ER Diagrams, and conceptual models, created database objects, and wrote SQL queries to normalize and populate data into normalized tables from the provided raw files. Generated test data to simulate Passenger details, flight details, and available seats.",
             categories: ['featured', 'Project']
         },
         {
             image: 'assets/images/edms.jpeg',
             pdf: 'assets/pdf/process.pdf',
             title: 'Document Management and Approval Workflow Automation',
-            description: "Analyzed AS-IS manual processes and implemented a TO-BE Electronic Document Management System (EDMS).",
+            description: "Analyzed AS-IS manual processes and implemented a TO-BE Electronic Document Management System (EDMS) for workflow automation.",
             categories: ['featured', 'Project']
         },
 
@@ -29,7 +29,7 @@ let render_projects = (slug) => {
             pdf: 'assets/pdf/Project3.pdf',
             title: 'E-Commerce Data Lakehouse Implementation and Analysis',
             technologies: ['Microsoft Fabric', 'PowerBI'],
-            description: "This project involved creating an end-to-end data pipeline using Microsoft Fabric to build a structured Data Lakehouse and visualized with Power BI to generate insights on sales and returns trends.",
+            description: "This project involved creating an end-to-end data pipeline using Microsoft Fabric to build a structured Data Lakehouse, which was then visualized with Power BI to generate insights on sales and return trends.",
             categories: ['featured', 'Project']
         },
 
@@ -38,7 +38,7 @@ let render_projects = (slug) => {
             link: 'https://public.tableau.com/app/profile/simranjeet.gill/vizzes',
             title: 'HR Analytics Dashboard',
             technologies: ['Tableau', 'EXCEL'],
-            description: "To create a Dashboard that provides comprehensive insights into workforce data, enhancing HR decision-making and operational efficiency.",
+            description: "Created a dashboard that provides comprehensive insights into workforce data, enhancing HR decision-making and operational efficiency.",
             categories: ['featured', 'Project']
         },
         {
@@ -46,7 +46,7 @@ let render_projects = (slug) => {
             link: 'https://public.tableau.com/app/profile/simranjeet.gill/vizzes',
             title: 'Credit Card Complaint Dashboard',
             technologies: ['Tableau', 'EXCEL'],
-            description: "Designed an interactive dashboard that visualizes comprehensive credit card complaint data, highlighting total complaints, response times, trends, geographic distribution, issue categorization, and submission methods for enhanced complaint management insights",
+            description: "Designed an interactive dashboard that visualizes comprehensive credit card complaint data, highlighting total complaints, response times, trends, geographic distribution, issue categorization, and submission methods, providing enhanced insights for complaint management.",
             categories: ['featured', 'Project']
         },
         {
@@ -54,7 +54,7 @@ let render_projects = (slug) => {
             pdf: 'assets/pdf/Project2.pdf',
             title: 'Customer Sentiment Analysis',
             technologies: ['R', 'EXCEL'],
-            description: "Analysed women's ecommerce clothing reviews to gain insights into customer satisfaction and fashion trends. Employed R programming for comprehensive data exploration, cleaning, transformation, analysis, and visualization, utilizing techniques such as sentiment analysis and statistical modeling.",
+            description: "Analyzed women's e-commerce clothing reviews to gain insights into customer satisfaction and fashion trends. Employed R programming for comprehensive data exploration, cleaning, transformation, analysis, and visualization, utilizing techniques such as sentiment analysis and statistical modeling.",
             categories: ['featured', 'Project']
         },
         {
@@ -62,7 +62,7 @@ let render_projects = (slug) => {
             pdf: 'assets/pdf/research1.pdf',
             title: 'Impact of an advertisement on consumer buying behaviour',
             technologies: ['Excel', 'G*Power', 'Smartpls'],
-            description: "Identify the impact of advertisement on consumer buying behaviour in the FMCG industry. Designed structural and measurement models, performed G*Power Analysis and used descriptive research method to study the factors Influencing.",
+            description: "Identified the impact of advertisements on consumer buying behavior in the FMCG industry. Designed structural and measurement models, performed G*Power analysis, and used descriptive research methods to study the influencing factors.",
             categories: ['featured', 'Research']
         },
     ];
