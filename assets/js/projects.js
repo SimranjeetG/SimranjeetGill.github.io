@@ -13,7 +13,7 @@ let render_projects = (slug) => {
             pdf: 'assets/pdf/Project1.pdf',
             title: 'Flight Reservation And Booking System',
             technologies: ['SQL', 'EXCEL'],
-            description: "Created a flight reservation function by loading data and creating DB tables, and executing DDL and DML queries. Designed ER diagrams and conceptual models, created database objects, and wrote SQL queries to normalize and populate data into tables from the provided raw files. Generated test data to simulate passenger details, flight details, and available seats.",
+            description: "Created a flight reservation function by loading data, creating DB tables, and executing DDL and DML queries. Designed ER diagrams and conceptual models, created database objects, and wrote SQL queries to normalize and populate data into tables from the provided raw files. Generated test data to simulate passenger details, flight details, and available seats",
             categories: ['featured', 'Project']
         },
         {
